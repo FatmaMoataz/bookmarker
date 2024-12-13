@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- * BOOTSTRAP -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- * FONT AWESOME -->
+     <link rel="stylesheet" href="./css/all.min.css">
+    <!-- * MY STYLE -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ^ LOGO SECTION -->
+    <div class="container d-flex justify-content-center align-items-center">
+<h1 class="py-5 position-relative display-5">Bookmarker</h1>
+    </div>
+    <!-- ^ INPUT SECTION -->
+     <div class="container">
+        <div class="inner d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark fa-xl pe-1" style="color: #3ca55c;"></i>
+        <h2>Bookmark your favorite sites</h2>
+        <i class="fa-solid fa-bookmark fa-xl ps-1" style="color: #b5ac49;" ></i>
+        </div>
+        <div class="mb-3">
+            <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark pe-1"></i> Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3">
+            <label for="siteURL" class="form-label fw-bold"><i class="fa-solid fa-link pe-1"></i> Site URL</label>
+            <input type="url" class="form-control" id="siteURL" placeholder="Website URL">
+          </div>
+          <div class="inner d-flex justify-content-center align-items-center">
+            <button class="btn btn-submit px-5">Submit</button>
+          </div>
+     </div>
+     <!-- ^ DATA HISTORY SECTION -->
+      <div class="container">
+<table class="table text-center mt-4">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="myData">
+        <!-- <tr>
+            <td>1</td>
+            <td>hello</td>
+            <td><button class="btn btn-success"><i class="fa-solid fa-eye pe-2"></i>Visit</button></td>
+            <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can pe-2"></i>Delete</button></td>
+        </tr> -->
+    </tbody>
+</table>
+      </div>
+    <!-- & BOOTSRTAP JS -->
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <!-- &  MY SCRIPT -->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

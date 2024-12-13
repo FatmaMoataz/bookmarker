@@ -1,0 +1,50 @@
+/* * GLOBAL STYLE */
+@font-face {
+    font-family: Pacifico-R;
+    src: url(../webfonts/Pacifico-Regular.ttf);
+}
+*::selection {
+    background-color: #fec260;
+  }
+:root {
+    --header-font-family:'Pacifico-R';
+}
+body {
+    background-color: #f7ecde;
+}
+h1 {
+    font-family: var(--header-font-family);
+}
+/* * LOGO SECTION */
+h1::before {
+    content: "";
+    position: absolute;
+    background-color: #fec260;
+    width: 100%;
+    height: 15%;
+    z-index: -1;
+    bottom: 50px;
+    transition: height 350ms;
+}
+h1:hover::before{
+    height: 30%;
+}
+/* * INPUT SECTION */
+h2 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+    border-color: #fec260;
+    box-shadow: 0 0 0 .25rem rgba(254, 194, 96, .25);
+}
+.btn-submit {
+    color: #fff;
+    background-color: #d1512d;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #a03315;
+        color:#fff ;
+    }
+}
