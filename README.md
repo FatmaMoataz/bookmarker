@@ -4,7 +4,7 @@
 
 ## 🌐 Live Demo
 
-[🔗 Live Demo]((https://fatmamoataz.github.io/bookmarker/)
+[🔗 Live Demo](https://fatmamoataz.github.io/bookmarker/)
 
 
 ## 🖼️ Screenshot
